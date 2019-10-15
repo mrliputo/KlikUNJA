@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/home_menu"
+        android:title="@string/home"
+        android:icon="@drawable/ic_home_bnv"/>
+
+    <item
+        android:id="@+id/repo_menu"
+        android:title="@string/repo"
+        android:icon="@drawable/ic_cloud_bnv"/>
+
+    <item
+        android:id="@+id/simpeg_menu"
+        android:title="@string/simpeg"
+        android:icon="@drawable/ic_people_bnv"/>
+
+    <item
+        android:id="@+id/dss_menu"
+        android:title="@string/dss"
+        android:icon="@drawable/ic_trending_bnv"/>
+
+</menu>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".EventsActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/events_toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_height="3dp">
+
+        <ProgressBar
+            android:progressDrawable="@drawable/progressbar"
+            android:id="@+id/event_progressbar"
+            android:layout_width="match_parent"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_height="8dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="-3dp"
+            android:progress="20"
+            android:background="@color/colorPrimary"/>
+
+    </FrameLayout>
+
+    <include layout="@layout/error" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginTop="200dp"
+        android:id="@+id/wv_loading"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:text="Loading events..."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <WebView
+        android:layout_marginBottom="35dp"
+        android:visibility="gone"
+        android:id="@+id/events_wv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+
+</LinearLayout>

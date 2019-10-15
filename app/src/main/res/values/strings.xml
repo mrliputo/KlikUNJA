@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">KlikUNJA</string>
+
+    <string name="home">Home</string>
+    <string name="repo">Repository</string>
+    <string name="simpeg">SIMPEG</string>
+    <string name="dss">DSS</string>
+</resources>
